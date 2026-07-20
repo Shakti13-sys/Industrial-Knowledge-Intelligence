@@ -1,0 +1,29 @@
+MAINTENANCE LOG — UNIT 4 PROCESS AREA
+Facility: Vizag Chemical Processing Plant
+Log period: Jan 2023 – Dec 2023
+
+Entry 2023-04-11
+Equipment: PUMP-204 (centrifugal transfer pump, Unit 4 feed line)
+Work performed: Bearing replaced due to excessive vibration (recorded 7.2 mm/s RMS,
+above 4.5 mm/s alarm threshold). Root cause: bearing grease interval exceeded by
+approximately 6 months. Technician: R. Nair. Downtime: 5.5 hours.
+
+Entry 2023-04-11 (follow-up)
+Recommendation logged: schedule bearing inspection every 18 months per OEM
+guidance, not the 24-month interval currently in the CMMS. Flagged to
+Reliability Engineering for interval correction.
+
+Entry 2023-07-02
+Equipment: VALVE-118 (isolation valve, Unit 4 feed line)
+Work performed: Routine actuator calibration. No anomalies found.
+
+Entry 2023-11-19
+Equipment: PUMP-204
+Work performed: Vibration monitoring check. Reading within normal range
+(2.1 mm/s RMS). No action required.
+
+Entry 2023-12-05
+Equipment: PUMP-204
+Note: Cross-referenced against Incident Report INC-2022-014 (see incident
+log) — this is the second vibration-related event on this pump in 18 months.
+Pattern flagged for Reliability Review Board.

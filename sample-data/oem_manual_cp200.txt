@@ -1,0 +1,32 @@
+OEM EQUIPMENT MANUAL — CENTRIFUGAL TRANSFER PUMP SERIES CP-200
+Manufacturer: Hallwright Industrial Pumps
+Applicable models: PUMP-204, PUMP-205, PUMP-206 (Unit 4 feed line pumps)
+
+SECTION 3: MAINTENANCE INTERVALS
+
+3.1 Bearing Inspection
+Recommended interval: every 18 months under normal operating conditions
+(process temperature below 85°C, continuous duty). Reduce to every 12 months
+if vibration monitoring shows sustained readings above 3.5 mm/s RMS.
+
+3.2 Vibration Alarm Thresholds
+- Normal: below 3.5 mm/s RMS
+- Alert: 3.5–4.5 mm/s RMS — schedule inspection within 30 days
+- Alarm: above 4.5 mm/s RMS — schedule immediate inspection, reduce load if possible
+
+3.3 Grease Schedule
+Bearing grease should be replenished every 12 months. Exceeding this interval
+is the leading cause of premature bearing wear reported across the CP-200
+series fleet.
+
+SECTION 7: KNOWN FAILURE MODES
+
+7.1 Vibration-related bearing wear is the most commonly reported failure mode
+for this series, typically preceded by a grease interval overrun. Facilities
+operating on a 24-month bearing inspection cycle report 2.3x the failure rate
+of facilities following the recommended 18-month cycle.
+
+SECTION 9: REGULATORY REFERENCES
+This equipment class falls under OISD-STD-118 (Fire Protection Facilities for
+Petroleum Refineries) inspection provisions where installed in a hydrocarbon
+service line.

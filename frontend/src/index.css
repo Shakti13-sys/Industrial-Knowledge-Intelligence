@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Graphite + Copper enterprise system */
+    --background: #141414;
+    --background-2: #1a1a1a;
+    --surface: #232323;
+    --surface-2: #2f2f2f;
+    --surface-3: #3a3a3a;
+    --foreground: #f8fafc;
+    --foreground-2: #d1d5db;
+    --muted: #9ca3af;
+    --muted-2: #6b7280;
+
+    --copper: #b87333;
+    --copper-hover: #d08a4e;
+    --copper-foreground: #141414;
+
+    --border: #2f2f2f;
+    --border-strong: #3a3a3a;
+    --input: #2f2f2f;
+
+    --success: #5ea882;
+    --warning: #d4a24c;
+    --danger: #c75d5d;
+    --info: #6b8caf;
+
+    --radius: 0.625rem;
+
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 12px -2px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 12px 32px -8px rgba(0, 0, 0, 0.5), 0 4px 8px -4px rgba(0, 0, 0, 0.3);
+    --shadow-copper: 0 4px 16px -4px rgba(184, 115, 51, 0.25);
+  }
+
+  :root[data-theme='light'] {
+    --background: #f6f5f1;
+    --background-2: #efede7;
+    --surface: #ffffff;
+    --surface-2: #f1efea;
+    --surface-3: #e6e3dc;
+    --foreground: #1c1a17;
+    --foreground-2: #3a3733;
+    --muted: #6b6660;
+    --muted-2: #9a948c;
+
+    --copper: #a86424;
+    --copper-hover: #8f5318;
+    --copper-foreground: #ffffff;
+
+    --border: #e0ddd6;
+    --border-strong: #d0ccc4;
+    --input: #e0ddd6;
+
+    --success: #3f7d5b;
+    --warning: #b8862e;
+    --danger: #b14545;
+    --info: #4a6f8f;
+
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 12px -2px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 12px 32px -8px rgba(0, 0, 0, 0.12), 0 4px 8px -4px rgba(0, 0, 0, 0.06);
+    --shadow-copper: 0 4px 16px -4px rgba(168, 100, 36, 0.2);
+  }
+
+  * {
+    border-color: var(--border);
+  }
+
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+  }
+
+  html[data-theme='light'] {
+    color-scheme: light;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11', 'ss01';
+    margin: 0;
+  }
+
+  ::selection {
+    background: rgba(184, 115, 51, 0.28);
+    color: var(--foreground);
+  }
+
+  *:focus-visible {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px var(--background), 0 0 0 4px rgba(184, 115, 51, 0.5);
+    border-radius: var(--radius);
+  }
+
+  /* Remove number input spinners */
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+@layer components {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-strong) transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: var(--border-strong);
+    border-radius: 999px;
+    border: 2px solid var(--background);
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: var(--muted-2);
+  }
+}
+
+@layer utilities {
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      var(--surface) 0%,
+      var(--surface-2) 50%,
+      var(--surface) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.6s ease-in-out infinite;
+  }
+  .grid-fade {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

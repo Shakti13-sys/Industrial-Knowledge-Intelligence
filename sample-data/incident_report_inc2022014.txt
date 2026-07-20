@@ -1,0 +1,31 @@
+INCIDENT REPORT: INC-2022-014
+Facility: Vizag Chemical Processing Plant
+Date of incident: 2022-09-08
+Classification: Near miss — mechanical failure, no injury, no release
+
+SUMMARY
+PUMP-204 (Unit 4 feed line, centrifugal transfer pump, CP-200 series)
+experienced a bearing seizure during routine operation. Operators noted
+unusual noise approximately 40 minutes before automatic trip on high
+vibration. No product release occurred. Unit 4 was down for 8 hours during
+repair.
+
+ROOT CAUSE
+Investigation found the bearing had not been greased in approximately 20
+months, exceeding the OEM-recommended 12-month grease interval (see OEM
+Manual, Section 3.3). Contributing factor: the plant's CMMS had this asset
+scheduled on a 24-month bearing inspection cycle, inconsistent with OEM
+guidance of 18 months.
+
+CORRECTIVE ACTIONS
+1. Bearing replaced and grease schedule reset (completed 2022-09-09).
+2. CMMS inspection interval flagged for correction from 24 to 18 months —
+   assigned to Reliability Engineering, target date 2022-10-15.
+3. Recommend vibration monitoring be added to this asset's routine rounds.
+
+REGULATORY NOTE
+This incident was reviewed against OISD-STD-118 provisions for hydrocarbon
+service line equipment; no violation was found, as no release occurred, but
+the near-miss was logged per internal safety reporting policy.
+
+STATUS: Corrective action #2 not yet confirmed complete as of report date.

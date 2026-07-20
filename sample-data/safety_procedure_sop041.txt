@@ -1,0 +1,32 @@
+SAFETY PROCEDURE SOP-SF-041
+Title: Rotating Equipment Vibration Monitoring — Unit 4 Feed Line
+Facility: Vizag Chemical Processing Plant
+Revision: 3 (supersedes Rev 2, dated 2021-05-01)
+
+1. PURPOSE
+Establish routine vibration monitoring for rotating equipment in hydrocarbon
+service to detect bearing degradation before failure, in line with
+OISD-STD-118 inspection expectations for fire protection-critical rotating
+equipment.
+
+2. SCOPE
+Applies to all CP-200 series pumps in Unit 4, including PUMP-204, PUMP-205,
+and PUMP-206.
+
+3. PROCEDURE
+3.1 Weekly handheld vibration readings shall be taken at the drive-end and
+non-drive-end bearing housings.
+3.2 Readings above 3.5 mm/s RMS shall be logged and escalated to the
+Reliability Engineer within 24 hours.
+3.3 Readings above 4.5 mm/s RMS require immediate equipment isolation review.
+
+4. REVISION HISTORY
+Rev 3 (this revision): Added explicit escalation timeline after Reliability
+Review Board findings related to INC-2022-014 identified inconsistent
+escalation practices across shifts.
+Rev 2: Added CP-200 series scope.
+Rev 1: Initial issue.
+
+5. TRAINING REQUIREMENT
+All Unit 4 operations personnel must complete vibration monitoring training
+before being authorized to record readings independently.
