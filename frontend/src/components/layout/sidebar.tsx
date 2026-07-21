@@ -78,7 +78,7 @@ export function Sidebar() {
       initial={false}
       animate={{ width: collapsed ? 72 : 256 }}
       transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1] }}
-      className="hidden lg:flex shrink-0 flex-col border-r border-border bg-background-2 overflow-hidden"
+      className="hidden lg:flex shrink-0 flex-col border-r border-border bg-background-2 overflow-hidden sticky top-0 h-screen"
     >
       {/* BRAND HEADER */}
       <div className="flex h-16 items-center gap-3 px-4 border-b border-border">
@@ -95,9 +95,9 @@ export function Sidebar() {
               <span className="text-sm font-bold tracking-wider text-foreground">
                 IKIP <span className="text-copper">AI</span>
               </span>
-              <span className="text-[9px] font-medium leading-tight text-muted tracking-tight mt-0.5 truncate">
-                Industrial Knowledge Intelligence
-              </span>
+              <span className="text-[10px] font-medium leading-tight text-muted tracking-tight mt-0.5 block">
+  Industrial Knowledge Intelligence
+</span>
             </motion.div>
           )}
         </AnimatePresence>
