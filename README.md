@@ -148,18 +148,6 @@ IKIP
 ```
 ## 👥 Contributors
 
-<p align="center">
-  <a href="https://github.com/shakti13-sys">
-    <img src="https://github.com/shakti13-sys.png?size=120" width="120" alt="Shakti13-sys" />
-  </a>
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/girish-indurkar">
-    <img src="https://github.com/girish-indurkar.png?size=120" width="120" alt="girish-indurkar" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/shakti13-sys"><b>Shakti13-sys</b></a>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/girish-indurkar"><b>girish-indurkar</b></a>
-</p>
+- **[shakti13-sys](https://github.com/Shakti13-sys)**  
+- **[girish-indurkar](https://github.com/girish-indurkar)**
+- **[24f2002988](https://github.com/24f2002988)**
