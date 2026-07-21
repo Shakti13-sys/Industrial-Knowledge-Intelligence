@@ -18,6 +18,16 @@
 
 The Industrial Knowledge Intelligence Platform (IKIP) is a robust application designed to revolutionize how organizations access and leverage critical information from unstructured industrial documents. This platform enables users to ingest, organize, and intelligently query various document types, such as manuals, logs, and reports. By integrating Retrieval-Augmented Generation (RAG) with Large Language Models (LLMs), IKIP provides quick, accurate, and context-aware answers to complex queries, significantly enhancing operational knowledge accessibility and decision-making.
 
+# 📑 Table of Contents
+
+- [🚀 Overview](#-overview)
+- [✨ Features](#-features)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [🚀 Getting Started](#-getting-started)
+- [💡 Usage](#-usage)
+- [📂 Project Structure](#-project-structure)
+- [👥 Contributors](#-contributors)
+  
 ## ✨ Features
 
 *   **Secure User Authentication and Authorization**: Robust JWT-based security for user access.
@@ -62,19 +72,79 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 Before you begin, ensure you have the following installed on your system:
-
+*   Python 3.8+
+*   Node.js (LTS recommended) & npm (or yarn)
+*   An OpenAI API Key
 *   [Docker](https://docs.docker.com/get-docker/)
 *   [Docker Compose](https://docs.docker.com/compose/install/)
 
 ### Installation
 
-1.  **Clone the repository:**
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Shakti13-sys/Industrial-Knowledge-Intelligence.git
+```
+```bash
+cd Industrial-Knowledge-Intelligence
+```
+
+### 2. Backend Setup
+
+Navigate to the `backend` directory and set up the Python environment.
+
+```bash
+cd backend
+```
+
+**Create a Virtual Environment:**
+
+```bash
+python -m venv venv
+```
+
+**Activate the Virtual Environment:**
+
+*   **macOS/Linux:**
     ```bash
-    git clone https://github.com/Shakti13-sys/Industrial-Knowledge-Intelligence.git
-    cd Industrial-Knowledge-Intelligence
+    source venv/bin/activate
+    ```
+*   **Windows:**
+    ```bash
+    venv\Scripts\activate
     ```
 
-2.  **Build and run the Docker containers:**
+**Install Dependencies:**
+
+```bash
+pip install -r requirements.txt
+```
+
+**Configure Environment Variables:**
+
+Create a `.env` file in the `backend` directory and add your OpenAI API key:
+
+```
+OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
+```
+Replace `"YOUR_OPENAI_API_KEY"` with your actual key.
+
+### 3. Frontend Setup
+
+Open a new terminal, navigate to the `frontend` directory, and install Node.js dependencies.
+
+```bash
+cd ../frontend # If you are still in the backend directory
+# or: cd Industrial-Knowledge-Intelligence/frontend
+```
+
+**Install Dependencies:**
+
+```bash
+npm install
+# or yarn install
+```
+### 4. Build and run the Docker containers:
     The `docker-compose.yml` file orchestrates the backend API, frontend application, and an Nginx reverse proxy.
     ```bash
     docker-compose up --build -d
@@ -84,15 +154,36 @@ Before you begin, ensure you have the following installed on your system:
     *   Build the `frontend` Docker image based on `frontend/Dockerfile`.
     *   Start the `backend` service, `frontend` service, and an `nginx` proxy in detached mode.
 
-3.  **Access the application:**
-    Once the containers are up and running (this may take a few minutes for the initial build), you can access the frontend web application in your browser:
-    ```
-    http://localhost
-    ```
-    The FastAPI backend API documentation (Swagger UI) will be available at:
-    ```
-    http://localhost/api/docs
-    ```
+
+## Usage
+
+### 1. Start the Backend API
+
+Make sure your Python virtual environment for the backend is active.
+
+```bash
+cd backend
+# Activate virtual environment if not already active
+# source venv/bin/activate (macOS/Linux)
+# venv\Scripts\activate (Windows)
+
+uvicorn main:app --reload
+```
+The backend API will be running at `http://127.0.0.1:8000`.
+
+### 2. Start the Frontend Application
+
+Open a **new terminal**, navigate to the `frontend` directory.
+
+```bash
+cd frontend
+
+npm run dev
+# or yarn dev
+```
+The frontend application will be available at `http://localhost:3000`.
+
+Open your web browser and visit `http://localhost:3000` to access the Industrial Knowledge Intelligence platform. You can now upload PDF documents, manage entities, and interact with the AI query engine.
 
 ### Initial Credentials
 
